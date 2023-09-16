@@ -1,37 +1,37 @@
 main {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
     
 }
 
 
 .option {
     width: 200px;
+    margin-bottom: 2px;
 }
 
 .question {
-    margin: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
     width: 300px;
 }
 
 .option:hover {
-    /* color: aqua; */
-    /* border: 2px inset orange; */
     box-shadow:0px 0px 0px 1px orange inset;
 }
 
 .correct_answer {
-    background-color: green;
+    background-color: rgb(18, 189, 18);
 }
 
 .wrong_answer {
-    background-color: red;
+    background-color: rgb(255, 59, 59);
 }
 
 .display_correct_answer {
-    
-    border: 2px solid green;
+    box-shadow:0px 0px 0px 2px green;
     background-color: lightgreen;
 }
 
@@ -47,4 +47,5 @@ button {
     max-width: 120px;
     margin-top: 30px;
     margin-bottom: 10px;
+    box-shadow: 8px 5px 5px rgb(210, 206, 206);
 }
