@@ -1,0 +1,21 @@
+.correct_answer {
+    background-color: green;
+}
+
+.wrong_answer {
+    background-color: red;
+}
+
+.score_display{
+    display: inline;
+}
+
+body {
+    display:grid;
+}
+
+button {
+    max-width: 120px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
