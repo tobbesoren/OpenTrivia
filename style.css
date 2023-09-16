@@ -1,9 +1,38 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+.option {
+    width: 200px;
+}
+
+.question {
+    margin: 20px;
+    width: 300px;
+}
+
+.option:hover {
+    /* color: aqua; */
+    /* border: 2px inset orange; */
+    box-shadow:0px 0px 0px 1px orange inset;
+}
+
 .correct_answer {
     background-color: green;
 }
 
 .wrong_answer {
     background-color: red;
+}
+
+.display_correct_answer {
+    
+    border: 2px solid green;
+    background-color: lightgreen;
 }
 
 .score_display{
