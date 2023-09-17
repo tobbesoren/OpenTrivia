@@ -57,9 +57,6 @@ const createQuestionElement = (question, questionNumber) => {
     
     options.forEach(option => {
         const optionElement = createOptionElement(option, question.correct_answer);
-        if(optionElement.innerText == question.correct_answer) {
-            optionElement.classList.add('correct')
-        }
         questionElement.appendChild(optionElement);
     })
     return questionElement;
@@ -70,6 +67,10 @@ const createOptionElement = (option, correct_answer) => {
     const optionElement = document.createElement('div');
     optionElement.className = 'option';
     optionElement.innerHTML = option;
+
+    if (option == correct_answer) {
+        optionElement.classList.add('correct');
+    }
 
     optionElement.addEventListener('click', e => {
 
